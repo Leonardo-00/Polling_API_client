@@ -58,7 +58,7 @@
         const token = localStorage.getItem("token");
 
         if (token) {
-        fetch("http://localhost:8000/api/auth/user/", {
+        fetch("https://web-production-085e.up.railway.app/api/auth/user/", {
             method: "GET",
             headers: {
             "Authorization": "Token " + token,

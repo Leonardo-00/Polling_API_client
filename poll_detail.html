@@ -60,7 +60,7 @@
         const token = localStorage.getItem("token");
 
         if (token) {
-        fetch("http://localhost:8000/api/auth/user/", {
+        fetch("https://web-production-085e.up.railway.app/api/auth/user/", {
             method: "GET",
             headers: {
             "Authorization": "Token " + token,
@@ -92,7 +92,7 @@
         token = localStorage.getItem("token");
 
         if (token) {
-            fetch("http://localhost:8000/api/polls/", {
+            fetch("https://web-production-085e.up.railway.app/api/polls/", {
                 method: "GET",
                 headers: {
                     "Authorization": "Token " + token,
@@ -122,7 +122,7 @@
             });
         }
         else {
-            fetch("http://localhost:8000/api/polls/", {
+            fetch("https://web-production-085e.up.railway.app/api/polls/", {
                 method: "GET",
             })
             .then(response => response.json())

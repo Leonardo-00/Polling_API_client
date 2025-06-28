@@ -49,7 +49,7 @@
                         token = localStorage.getItem("token");
 
                         if (token) {
-                            fetch("https://web-production-085e.up.railway.app/api/polls/", {
+                            fetch("https://polling-api-project.vercel.app//api/polls/", {
                                 method: "GET",
                                 headers: {
                                     "Authorization": "Token " + token,
@@ -89,7 +89,7 @@
                             });
                         }
                         else {
-                            fetch("https://web-production-085e.up.railway.app/api/polls/", {
+                            fetch("https://polling-api-project.vercel.app//api/polls/", {
                                 method: "GET",
                             })
                             .then(response => response.json())
@@ -130,7 +130,7 @@
         const token = localStorage.getItem("token");
 
         if (token) {
-        fetch("https://web-production-085e.up.railway.app/api/auth/user/", {
+        fetch("https://polling-api-project.vercel.app//api/auth/user/", {
             method: "GET",
             headers: {
             "Authorization": "Token " + token,

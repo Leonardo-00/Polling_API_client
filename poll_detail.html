@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 <body>
-
     <header>
             <nav class="navbar navbar-light bg-light d-flex justify-content-between px-4">
                 <ul class="d-flex justify-content-around list-unstyled col-9 align-items-center mb-0">
@@ -51,10 +50,7 @@
     </main>
 
     <script>
-        function logout() {
-            localStorage.removeItem("token");
-            location.reload();  // ricarica la pagina senza il token
-        }
+        
     </script>
     <script>
         const token = localStorage.getItem("token");
@@ -138,7 +134,7 @@
             });
         }
     </script>
-  
+  <script src="js/script.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

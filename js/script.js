@@ -296,7 +296,7 @@ function submitVote(pollId, choiceId) {
         return;
     }
 
-    fetch(baseUrl + "api/polls/vote/${pollId}/", {
+    fetch(baseUrl + "api/polls/vote/"+pollId+"/", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

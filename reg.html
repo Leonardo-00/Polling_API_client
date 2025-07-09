@@ -73,7 +73,7 @@
         <script>
             let optionCount = 0;
 
-            fetch("http://localhost:8000/api/categories/")
+            fetch(baseUrl + "api/categories/")
             .then((response) => response.json())
             .then((data) => {
                 const categoriesList = document.getElementById("categories");
@@ -119,7 +119,7 @@
                 favorite_categories: selected.map(option => option.value)
             };
 
-            const response = await fetch("http://localhost:8000/api/auth/registration/", {
+            const response = await fetch(baseUrl + "api/auth/registration/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

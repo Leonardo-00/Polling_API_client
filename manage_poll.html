@@ -82,7 +82,7 @@
                     return;
                 }
 
-                fetch(`http://localhost:8000/api/polls/${pollId}/`, {
+                fetch(baseUrl + "api/polls/${pollId}/", {
                     headers: {
                         'Authorization': `Token ${token}`
                     }
@@ -153,7 +153,7 @@
                     return;
                 }
 
-                const response = await fetch("http://localhost:8000/api/polls/"+pollData.id+"/", {
+                const response = await fetch(baseUrl + "api/polls/"+pollData.id+"/", {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
